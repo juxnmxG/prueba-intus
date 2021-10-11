@@ -15,13 +15,6 @@
             <h6 class="card-text ">Fecha de creación {{$pregunta->created_at}}</h6>
             <a href="{{route('preguntas.show', $pregunta->id)}}">Ver respuestas</a>
         </div>
-        <div class=" border width-30 p-4">
-            <br><br>
-            <h1 class="card-text">
-                0
-            </h1>
-            <h3 class="card-title">Votos</h3>
-        </div>
     </div>
 </div>
 @endforeach

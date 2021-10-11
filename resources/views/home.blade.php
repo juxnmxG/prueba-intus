@@ -10,17 +10,6 @@
             <h6 class="card-text ">Fecha de creación {{$pregunta->created_at}}</h6>
             <a href="{{route('preguntas.show', $pregunta->id)}}"> Ver respuestas</a>
         </div>
-        <div class=" border width-30 p-4">
-            <h1 class="card-text">{{}}</h1>
-            <h3 class="card-title">Votos</h3>
-            <form class="container" action="{{route('votos.store')}}" method="POST">
-                @csrf
-                <div class="mb-3">
-                    <input type="hidden" name="pregunta_id" value="{{$pregunta->id}}">
-                    <button type="submit" class="btn btn-primary mt-4">Votar</button>
-                </div>
-            </form>
-        </div>
     </div>
 </div>
 @endforeach
